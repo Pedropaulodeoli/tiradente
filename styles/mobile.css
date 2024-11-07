@@ -1,0 +1,100 @@
+
+
+/*__________________________*/
+/*   ELEMENTOS DO HEADER    */
+/*__________________________*/ 
+
+@media screen and (max-width: 1200px) {
+    header {
+        max-width: 100%;
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../image/headercapaM.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        max-width: 100%;
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../image/headercapaP.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+
+/*__________________________*/
+/*           NAVBAR         */
+/*__________________________*/
+
+@media screen and (max-width: 1110px) {
+    header nav#nav-esquerda ul.menu-principal li a {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    header nav#nav-esquerda div#logo {
+        margin-left: 1rem;
+    }
+
+    /*__________________________*/
+    /*      MENU HAMBURGUER     */
+    /*__________________________*/
+
+    header nav#nav-esquerda {
+        justify-content: space-between;
+    }
+
+    header nav#nav-esquerda ul#icone-menu {
+        display: flex;
+    }
+
+
+    header nav#nav-esquerda ul.menu-principal {
+        flex-direction: column;
+        width: 80%;
+        height: 70vh;
+        background: linear-gradient(#253C59, #12acc7, #4ccf19);
+        padding-top: .5rem;
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 999;
+        display: none; 
+    }
+
+    header nav#nav-esquerda ul.menu-principal li {
+        margin: .5rem;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li a {
+        font-size: 120%;
+    }
+}
+    /*__________________________ */
+    /*      IMAGEM DESCRICAO     */
+    /*__________________________ */
+
+    @media (max-width: 768px) {
+        .image-description {
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+        }
+    
+        .image-description img {
+            margin-right: 0;
+            margin-bottom: 15px; 
+            max-width: 100%; 
+        }
+    }
+    
+

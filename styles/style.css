@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Mynerve', cursive; 
+    text-shadow: 4px 4px 6px #031d35;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+    color: #0382f8;
+}
+
+h2 {
+    font-family: 'Mynerve', cursive; 
+    text-shadow: 4px 4px 6px #031d35;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+    color: #0382f8;
+}
+
+/* botao de chamada */
+
+div.chamada a{
+    font-size: max(16px, 1.8vw);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(#173b1a, #257025);
+
+    display: inline-block;
+
+    animation-name: headerA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+div.chamada a:hover{
+    opacity: .8;
+}
+    
+
+/*__________________________*/
+/*   ELEMENTOS DO HEADER    */
+/*__________________________*/
+
+header {
+    max-width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../image/headercapaG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+/*__________________________*/
+/*         LOGO             */
+/*__________________________*/
+
+header nav#nav-esquerda {
+    width: 100%;
+    height: 150px;
+    display: flex;  
+    flex-flow: row;
+    align-items: center;
+}
+
+header nav#nav-esquerda div#logo {
+    max-width: 130px;
+    max-height: 120px; 
+    margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*__________________________*/
+/*      MENU HAMBURGUER     */
+/*__________________________*/
+
+header nav#nav-esquerda ul#icone-menu {
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li {
+    list-style: none; 
+    cursor: pointer; 
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon {
+    font-size: 50px; 
+    color: #fff; 
+    margin-right: 2rem; 
+}
+
+
+/*__________________________*/
+/*      MENU PRINCIPAL      */
+/*__________________________*/
+
+header nav#nav-esquerda ul.menu-principal {
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav#nav-esquerda ul.menu-principal li a {
+    list-style: none;
+    margin-right: 2rem;
+    font-family: 'Roboto', sans-serif; 
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover {
+    color: #b1d4a6; 
+    font-size: 110%;    
+    text-shadow: 4px 6px 10px #000;
+    transition: .3s ease-in-out;    
+}
+
+/*__________________________*/
+/*         CHAMADA          */
+/*__________________________*/
+
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div.chamada h1{
+    color: #fff;
+
+
+    animation-name: headerH1-moveParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+header div.chamada h2{
+    color: #437314;
+
+    margin-bottom: 55px;
+
+    animation-name: headerH1-moveParaDireita;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwardsð;
+}
+
+/*__________________________*/
+/*         SOBRE            */
+/*__________________________*/
+
+
+.Sobre {
+    background-color: #b8db83; 
+    padding: 20px;          
+    border-radius: 13px;   
+    max-width: 800px;     
+    margin: 20px auto;    
+    font-family: Arial, sans-serif; 
+    color: #333;           
+}
+
+.Sobre h1 {
+    color: #ffffff;        
+    font-size: 2em;       
+    text-align: center;
+   
+}
+
+.Sobre p {
+    line-height: 1.6;     
+    font-size: 1em;       
+    margin: 20px;
+}
+
+/*__________________________*/
+/*     IMAGE DESCRICAO      */
+/*__________________________*/
+
+
+.flora {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 40px; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.fauna {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 40px;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.image-description img {
+    max-width: 3400px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-right: 20px; 
+    transition: transform 0.3s; 
+}
+
+.image-description img:hover {
+    transform: scale(1.05); 
+}
+
+.description {
+    max-width: 600px; 
+}
+
+.description h3 {
+    font-size: 2em; 
+    margin-bottom: 10px; 
+    color: #343a40; 
+}
+
+.description p {
+    font-size: 1em; 
+    color: #555; 
+    line-height: 1.6; 
+}
+
+
+/*__________________________*/
+/*          FOOTER          */
+/*__________________________*/
+
+footer {
+    background-color: #68b16b; 
+    padding: 40px 0; 
+    min-height: 100px;
+    color: #fff; 
+}
+
+footer .social-links a {
+    font-size: 30px; 
+    transition: color 0.3s; 
+}
+
+footer .social-links a:hover {
+    color: #b2ebf2; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px; 
+}
+
+footer .container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+footer {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+
